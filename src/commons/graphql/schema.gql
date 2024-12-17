@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Movies {
+  id: Int!
+  title: String!
+  city: String!
+  date: String!
+}
+
+type Pets {
+  id: Int!
+  name: String!
+  kind: String
+}
+
+type Query {
+  movies: Movies!
+  pets: [Pets!]!
+}
