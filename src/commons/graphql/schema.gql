@@ -19,3 +19,12 @@ type Query {
   movies: Movies!
   pets: [Pets!]!
 }
+
+type Mutation {
+  create(petInput: PetsInput!): Pets!
+}
+
+input PetsInput {
+  name: String!
+  kind: String
+}
